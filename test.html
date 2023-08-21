@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - callumjt</title>
+
+    <link rel="stylesheet" href="/js & css/navbar.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="css" href="/js & css/dark.css" id="color">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/srcs/img/pic1.png">
+
+    <script defer src="/js & css/navbar.js"></script>
+    <script defer src="/script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    
+</head>
+<body>
+
+    <div class="splide-big">
+    <section class="splide" aria-labelledby="" style="top: 100px; height: 150px;">
+        <h2 id="carousel-heading" style="opacity: 0;">aaa</h2>
+      
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="/srcs/img/test1.png">hi</li>
+                  <li class="splide__slide"><img src="/srcs/img/test2.png"></li>
+                  <li class="splide__slide"><img src="/srcs/img/test3.png"></li>
+              </ul>
+        </div>
+
+        <ul class="splide__pagination"></ul>
+    </section>
+    </div>
+
+    <script defer>
+        document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide', {
+            type: 'loop',
+            width: '300px',
+            pagination: true,
+            arrowPath: 'M 14.75 29.082031 C 14.527344 28.804688 14.410156 28.5 14.394531 28.167969 C 14.382812 27.832031 14.5 27.542969 14.75 27.292969 L 22.082031 19.957031 L 14.707031 12.582031 C 14.484375 12.359375 14.382812 12.0625 14.394531 11.6875 C 14.410156 11.3125 14.527344 11.015625 14.75 10.792969 C 15.027344 10.515625 15.328125 10.382812 15.644531 10.394531 C 15.964844 10.410156 16.25 10.542969 16.5 10.792969 L 24.792969 19.082031 C 24.929688 19.222656 25.027344 19.359375 25.082031 19.5 C 25.140625 19.640625 25.167969 19.792969 25.167969 19.957031 C 25.167969 20.125 25.140625 20.277344 25.082031 20.417969 C 25.027344 20.554688 24.929688 20.695312 24.792969 20.832031 L 16.542969 29.082031 C 16.292969 29.332031 16 29.453125 15.667969 29.4375 C 15.332031 29.421875 15.027344 29.304688 14.75 29.082031 Z M 14.75 29.082031" fill="#ffffff',
+        });
+        splide.mount();
+        } );
+    </script>
+
+</body>
+</html>

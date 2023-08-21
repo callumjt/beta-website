@@ -1,0 +1,6 @@
+:root {
+    --text-color: white;
+    --text-color-opposite: black;
+    --navbar-bg: rgba(0, 0, 0, 0.7);
+    --selector-bg: rgba(68, 73, 80);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <meta content="Callumjt's website" property="og:title" />
+    <meta content="This site is owned by callumjt and is very cool. Join the discord for support and giving suggestions: https://discord.gg/WmCZYtJZWy" property="og:description" />
+    <meta content="https://callumjt.is-a.dev" property="og:url" />
+    <meta content="https://raw.githubusercontent.com/callumjt/callumjt.github.io/main/storing/pic1.webp" property="og:image" />
+    <meta content="#9900cc" data-react-helmet="true" name="theme-color" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="srcs/imgs/cookie.png">  
+<html lang="en" height="100%">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="cookie.css">
+<script defer src="cookie.js"></script>
+
+<body height="100%">
+    
+    <div class="background-container">
+        <div id="dots"></div>
+    </div>
+
+    <div class="cookie">
+
+        <img src="srcs/imgs/cookie.png" class="cookie2" id="el" tabindex="1" draggable="false">
+
+        <img src="srcs/imgs/glow.svg" style="scale: 0.9; z-index: -1; animation: turnG 9s linear infinite;" class="glow">
+
+    </div>
+
+    <div class="counts">
+        <p id="count"></p>
+        <p id="perCount"></p>
+    </div>
+
+    <div class="upgrades">
+
+		<div class="upgrade" id="upgrade1C">
+      <p id="upgrade1"></p>
+      <p>+1 per click</p>
+		</div>
+		
+		<div class="upgrade" id="upgrade2C">
+      <p id="upgrade2"></p>
+      <p>+1 per second</p>
+		</div>
+
+    <div class="upgrade" id="upgrade3C">
+      <p id="upgrade3"></p>
+      <p>+10 per second</p>
+		</div>
+
+	</div>
+
+    <div class="leftIcons">
+
+        <div class="settingsIcon" id="settings">
+            <img src="srcs/imgs/settings.svg" style="z-index: 100; position: relative;">
+            <p>Settings</p>
+        </div>
+
+        <div class="infoIcon" id="info">
+            <img src="srcs/imgs/info.svg" style="position: relative; z-index: 10;">
+            <p>Statistics</p>
+        </div>
+
+    </div>
+
+    <div class="settingsPage" id="settingsPage">
+
+        <div class="close">
+          <img id="close" src="srcs/imgs/close.svg">
+        </div>
+    
+        <div class="category">Save file</div>
+    
+        <button onClick="reset()" style="position: relative; left: 1%; color: rgb(201, 204, 216); font-family: Sofia;">reset</button>
+    
+        <div class="category">Background</div>
+    
+        <div class="background-check" style="position: relative; left: 1%;">
+          <p style="color: rgb(201, 204, 216); font-family: Sofia;">Moving background</p>
+          <input type="checkbox" id="background-check" onclick="check()">
+        </div>
+    
+        <div class="background-scroll">
+          <p style="color: rgb(201, 204, 216); font-family: Sofia;">Background speed (higher = slower)</p>
+          <input type="text" id="cooldown" value="0.7">
+        </div>
+    
+    </div>
+
+    <div class="infoPage" id="infoPage">
+
+        <div class="close">
+          <img id="close2" src="srcs/imgs/close.svg">
+        </div>
+    
+    
+        <p id="total"></p>
+    </div>
+
+    <div class="achievementDiv"></div>
+    <div class="cookiePart"></div>
+
+</body>
+</html>

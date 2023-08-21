@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color-scheme: dark;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--navbar-bg);
+    backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    z-index: 999999;
+    transition: all .15s;
+    min-width: 606px;
+}
+
+.left {
+    height: inherit;
+    width: 20%;
+    display: flex;
+    position: relative;
+    left: 1%;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+
+.right {
+    height: inherit;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    right: 25px;
+    position: absolute;
+    gap: 15px;
+}
+
+.navbarImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+}
+
+.button {
+    user-select: none;
+    height: inherit;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    text-shadow: none;
+    transition: all .3s;
+    font-size: 1.3rem;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: var(--text-color);
+    color: var(--text-color-opposite)
+}
+
+.right a {
+    height: 70%;
+}
+
+.lightToggle {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    transition: all .3s;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightToggle img {
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    transition: all .3s;
+    border-radius: 100%;
+}
+
+.lightToggle:hover {
+    background-color: var(--selector-bg);
+    cursor: pointer;
+}
+
+.leftText {
+    color: var(--text-color);
+}

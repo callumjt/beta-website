@@ -1,0 +1,238 @@
+@import url(/colors.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    color-scheme: dark;
+    font-family: Sofia;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+@font-face {
+    font-family:"Sofia";
+    src: url(/srcs/fonts/Sofia_Pro_Bold_Az.otf) format("opentype");
+} 
+
+/*.top {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    aspect-ratio: 1920/300;
+    min-height: 200px;
+    max-height: 250px;
+    background-color: var(--cp-purple);
+}*/
+
+.section-1 {
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    top: 50px;
+}
+
+.pfp-big {
+    width: 320px;
+    height: 320px;
+    border-radius: 7px;
+}
+
+.small-1 {
+    height: 320px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials {
+    width: inherit;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialButton {
+    width: 140px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99999px;
+    scale: 1;
+    transition: all .2s;
+}
+
+.socialButton:hover {
+    scale: 1.1;
+}
+
+.devlog {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    user-select: none;
+}
+
+.devlogBg {
+    width: 800px;
+    height: 400px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.devlogImgs {
+    position: relative;
+    height: 270px;
+    width: 300px;
+}
+
+.devlogImg1 {
+    border-radius: 20px;
+    position: absolute;
+}
+
+.devlogRight {
+    width: 400px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.latest {
+    font-size: 25px;
+    color: orange;
+}
+
+.bigText {
+    font-size: 45px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.purpleButton {
+    height: 60px;
+    top: 10px;
+    left: 5px;
+    position: relative;
+    width: 220px;
+    background-color: rgb(67, 117, 254);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    scale: 1;
+    transition: all .3s;
+    border-radius: 99999px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(54, 70, 76, 0.05) 0px 5px 10px 0px, rgba(67, 117, 254, 0.5) 0px 0px 20px 4px;
+}
+
+.purpleButton:hover {
+    scale: 1.1;
+}
+
+@media only screen and (max-width: 877px) {
+    .section-1 {
+        height: 800px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .devlog {
+        height: 800px;
+    }
+    .devlogBg {
+        flex-direction: column;
+        height: 800px;
+        gap: 1px;
+    }
+    .latest {
+        text-align: center;
+    }
+    .devlogRight {
+        align-items: center;
+    }
+    .purpleButton {
+        left: 0;
+    }
+}
+
+.splide__pagination__page {
+    width: 30px !important;
+    border-radius: 9999999px !important;
+    height: 3px !important;
+    top: 10px;
+    transition: all .2s !important;
+    background: #929292 !important;
+}
+
+.splide__pagination__page.is-active {
+    transform: scale(1) !important;
+    background: rgb(255, 255, 255) !important;
+}
+
+.splide__arrow {
+    background: rgb(0, 0, 0) !important;
+    opacity: 1 !important;
+    transition: all .2s;
+}
+.splide__arrow svg {
+    scale: 1.5;
+}
+
+.splide-big {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.splide {
+    text-align: center;
+}
+
+.splide__arrow--next svg {
+    position: relative;
+    left: 2px;
+}
+
+.splide__arrow:active {
+    scale: 0.95;
+}
+
+.splide__arrow:focus {
+    outline-color: transparent !important;
+}

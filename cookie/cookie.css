@@ -1,0 +1,400 @@
+* {
+    user-select: none;
+    color-scheme: dark;
+}
+
+:root {
+  --cookie: 0;
+  --test: 0s;
+}
+
+body {
+  background-color: rgb(19, 18, 21);
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#dots {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(#11a2ce 15%, transparent 0) 0 0 / 50px 50px repeat;
+  background-size: 75px 75px;
+  z-index: -1;
+  animation-name: scroll;
+  animation-duration: .7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 75px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes noscroll {
+  0% {background-position: 75px 0;}
+  100% {background-position: 75px 0;}
+}
+
+.cookie {
+width: 100%;
+height: 100%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+user-select: none;
+}
+
+.cookie2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 9999999px;
+  scale: 1;
+  transition: all .3s;
+  cursor: pointer;
+  animation-duration: .1s;
+  user-select: none;
+  z-index: 99;
+}
+
+.cookie2:hover {
+  scale: 1.1;
+}
+
+.cookie2:active {
+  scale: 0.9;
+}
+
+@keyframes turn {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+
+#count {
+color: white;
+font-size: 2rem;
+font-family: Sofia;
+user-select: none;
+}		
+
+.upgrades {	
+display: flex;	
+flex-direction: column;	
+position: relative;	
+font-family: Sofia;	
+width: 100%;
+justify-content: center;
+align-items: end;
+gap: 15px;
+top: 30px;
+overflow-y: scroll;	
+}	
+
+.upgrade {	
+position: relative;	
+width: 131px;	
+height: 50px;	
+background-color: rgb(64, 67, 80);	
+text-align: center;	
+color: rgb(201, 204, 216);	
+left: -20px;
+border: 0.8px solid rgba(255, 255, 255, 0.2);
+border-radius: 12px;
+box-shadow: rgba(193, 198, 217, 0.1) 0px 0px 10px;
+transition: all .1s;	
+}
+
+.upgrade:hover {
+  background-color: rgb(69, 72, 85);
+}
+
+.settingsIcon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  background-color: rgb(64, 67, 80);
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(193, 198, 217, 0.1) 0px 0px 10px;
+  border-radius: 99999px;
+  transition: all .3s;
+  display: flex;
+  flex-direction: row;
+  font-family: Sofia;
+  color: rgb(201, 204, 216);
+  font-size: larger;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.settingsIcon img {
+  transform: rotate(0deg);
+  transition: all .3s;
+}
+
+.settingsIcon:hover img {
+  transform: rotate(60deg);
+}
+
+.settingsIcon:hover {
+  width: 150px;
+}
+
+.settingsIcon p {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.settingsPage {
+  width: 50%;
+  height: 600px;
+  background-color: rgb(64, 67, 80);
+  position: absolute;
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  top: 15%;
+  left: 25%;
+  box-shadow: rgba(193, 198, 217, 0.1) 0px 0px 10px;
+}
+
+#settingsPage {
+  opacity: 0;
+  z-index: -999;
+}
+
+.close {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  top: 5px;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.background-check {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.settings {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  position: relative;
+  top: -105px;
+  left: 15px;
+  z-index: -1;
+}
+
+@keyframes turnG {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#perCount {
+  display: inline;
+  font-family: Sofia;
+  font-size: larger;
+  color: white;
+}
+
+.glow {
+  position: absolute;
+  z-index: -1;
+}
+
+.background-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+  left: 1%;
+}
+
+.category {
+  text-decoration: underline;
+  font-size: xx-large;
+  text-decoration: bold;
+  font-family: Sofia;
+  left: 1%;
+  position: relative;
+  height: 60px;
+  top: 3%;
+}
+
+.infoIcon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  background-color: rgb(64, 67, 80);
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(193, 198, 217, 0.1) 0px 0px 10px;
+  border-radius: 99999px;
+  transition: all .3s;
+  display: flex;
+  flex-direction: row;
+  font-family: Sofia;
+  color: rgb(201, 204, 216);
+  font-size: larger;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.infoIcon:hover {
+  width: 150px;
+}
+
+.infoIcon img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: all .3s;
+}
+
+.infoIcon p {
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+.infoIcon:hover img {
+  transform: rotate(180deg);
+}
+
+.infoPage {
+  width: 50%;
+  height: 600px;
+  background-color: rgb(64, 67, 80);
+  position: absolute;
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  top: 15%;
+  left: 25%;
+  box-shadow: rgba(193, 198, 217, 0.1) 0px 0px 10px;
+}
+
+#infoPage {
+  opacity: 0;
+  z-index: -999;
+}
+
+#total {
+  font-family: Sofia;
+  position: relative;
+  left: 1%;
+}
+
+#achievementBox {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(64, 67, 80);
+  left: 1%;
+  position: relative;
+  border-radius: 12px;
+  transition: all .3s;
+  animation-duration: 0.6s;
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(193, 198, 217, 0.1) 0px 0px 10px;
+  font-family: Sofia;
+  color: rgb(201, 204, 216);
+  word-wrap: normal;
+}
+
+@keyframes achievementStart {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes achievementStop {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+.achievementDiv {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  top: 0;
+  position: absolute;
+  gap: 10px;
+  justify-content: end;
+  top: -10px;
+  z-index: -1;
+}
+
+.cookiePart {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 100;
+}
+
+.cookieParticle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  scale: 0.2;
+  z-index: 100;
+  transition: all .3s;
+  animation: cookieParticle 1s;
+}
+
+@keyframes cookieParticle {
+  to {translate: 0 300px; opacity: 0;}
+}
+
+@font-face {
+  font-family:"Sofia";
+  src: url(/srcs/fonts/Sofia_Pro_Bold_Az.otf) format("opentype");
+} 
+
+.counts {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+}
+
+.leftIcons {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
