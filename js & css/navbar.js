@@ -40,8 +40,8 @@ const navbarButton2 = document.createElement("div");
 navbarButton2.classList = "button";
 navbarButton2.textContent = "Projects";
 const navbarButton2R = document.createElement("a");
-navbarButton2R.href = "/downloads";
-if (window.location.pathname === "/downloads" || window.location.pathname === "/downloads.html") {
+navbarButton2R.href = "/projects";
+if (window.location.pathname === "/projects" || window.location.pathname === "/projects.html") {
     navbarButton2.style.color = "#3b82f6";
     // navbarButton2.style.textShadow = "5px 0px 30px #001BFF";
 }
