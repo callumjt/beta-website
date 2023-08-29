@@ -38,7 +38,7 @@ if (window.location.pathname === "/" || window.location.pathname === "/index.htm
 
 const navbarButton2 = document.createElement("div");
 navbarButton2.classList = "button";
-navbarButton2.textContent = "Games";
+navbarButton2.textContent = "Projects";
 const navbarButton2R = document.createElement("a");
 navbarButton2R.href = "/downloads";
 if (window.location.pathname === "/downloads" || window.location.pathname === "/downloads.html") {
