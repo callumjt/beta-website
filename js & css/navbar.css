@@ -16,11 +16,11 @@
     font-size: 1.5rem;
     z-index: 999999;
     transition: all .15s;
-    min-width: 606px;
+    overflow: hidden;
 }
 
 .left {
-    height: inherit;
+    height: 70px;
     width: 20%;
     display: flex;
     position: relative;
@@ -31,7 +31,7 @@
 }
 
 .right {
-    height: inherit;
+    height: 70px;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -99,4 +99,50 @@
 
 .leftText {
     color: var(--text-color);
+}
+
+.rightMobile {
+    height: 70px;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    right: 25px;
+    position: absolute;
+    gap: 15px;
+}
+
+.dropdownButton {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 9999px;
+    box-shadow: 1px 1px 2px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownButton:hover {
+    cursor: pointer;
+}
+
+.dropdownButton > img {
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 70px);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown > a {
+    height: 70%
 }

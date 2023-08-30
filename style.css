@@ -164,6 +164,10 @@ body {
     scale: 1.1;
 }
 
+.small-1-text {
+    font-size: 34px;
+}
+
 @media only screen and (max-width: 877px) {
     .section-1 {
         height: 800px;
@@ -186,6 +190,9 @@ body {
     }
     .purpleButton {
         left: 0;
+    }
+    .small-1-text {
+        font-size: 25px;
     }
 }
 
