@@ -194,6 +194,12 @@ body {
     .small-1-text {
         font-size: 25px;
     }
+    .bigText {
+        font-size: 40px;
+    }
+    .description {
+        font-size: 17px;
+    }
 }
 
 .splide__pagination__page {
